@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="160" width="280" viewBox="0 0 280 160" class="diagram" text-anchor="middle" font-family="monospace" font-size="13px" stroke-linecap="round">
+<text class="ascii" display="none"><![CDATA[
+
+______      _   _
+| ___ \    | | | |
+| |_/ /   _| |_| |__   ___  _ __
+|  __/ | | | __| '_ \ / _ \| '_ \
+| |  | |_| | |_| | | | (_) | | | |
+\_|   \__, |\__|_| |_|\___/|_| |_|
+       __/ |
+      |___/
+]]></text>
+<path d="M 8,40 L 8,96" fill="none" stroke="black"/>
+<path d="M 24,56 L 24,72" fill="none" stroke="black"/>
+<path d="M 24,88 L 24,120" fill="none" stroke="black"/>
+<path d="M 48,88 L 48,96" fill="none" stroke="black"/>
+<path d="M 56,136 L 56,152" fill="none" stroke="black"/>
+<path d="M 64,80 L 64,104" fill="none" stroke="black"/>
+<path d="M 80,72 L 80,104" fill="none" stroke="black"/>
+<path d="M 96,40 L 96,128" fill="none" stroke="black"/>
+<path d="M 112,40 L 112,72" fill="none" stroke="black"/>
+<path d="M 112,88 L 112,104" fill="none" stroke="black"/>
+<path d="M 128,40 L 128,120" fill="none" stroke="black"/>
+<path d="M 144,40 L 144,120" fill="none" stroke="black"/>
+<path d="M 160,88 L 160,120" fill="none" stroke="black"/>
+<path d="M 176,96 L 176,120" fill="none" stroke="black"/>
+<path d="M 224,72 L 224,120" fill="none" stroke="black"/>
+<path d="M 240,88 L 240,120" fill="none" stroke="black"/>
+<path d="M 256,88 L 256,120" fill="none" stroke="black"/>
+<path d="M 272,96 L 272,120" fill="none" stroke="black"/>
+<path d="M 44,88 L 60,120" fill="none" stroke="black"/>
+<path d="M 52,40 L 60,56" fill="none" stroke="black"/>
+<path d="M 164,72 L 176,96" fill="none" stroke="black"/>
+<path d="M 212,72 L 224,96" fill="none" stroke="black"/>
+<path d="M 260,72 L 272,96" fill="none" stroke="black"/>
+<path d="M 36,72 L 44,56" fill="none" stroke="black"/>
+<path d="M 44,88 L 60,56" fill="none" stroke="black"/>
+<path d="M 76,136 L 80,128" fill="none" stroke="black"/>
+<path d="M 176,96 L 188,72" fill="none" stroke="black"/>
+<path d="M 4,40 L 52,40" fill="none" stroke="black"/>
+<path d="M 20,56 L 44,56" fill="none" stroke="black"/>
+<path d="M 144,72 L 164,72" fill="none" stroke="black"/>
+<path d="M 188,72 L 212,72" fill="none" stroke="black"/>
+<path d="M 240,72 L 260,72" fill="none" stroke="black"/>
+<path d="M 24,88 L 48,88" fill="none" stroke="black"/>
+<path d="M 108,88 L 128,88" fill="none" stroke="black"/>
+<path d="M 60,120 L 76,120" fill="none" stroke="black"/>
+<path d="M 108,120 L 128,120" fill="none" stroke="black"/>
+<path d="M 188,120 L 212,120" fill="none" stroke="black"/>
+<path d="M 56,136 L 76,136" fill="none" stroke="black"/>
+<path d="M 56,152 L 84,152" fill="none" stroke="black"/>
+<g class="text">
+<text x="104" y="36">_</text>
+<text x="136" y="36">_</text>
+<text x="32" y="68">_</text>
+<text x="88" y="68">_</text>
+<text x="120" y="68">_</text>
+<text x="232" y="68">_</text>
+<text x="152" y="84">_</text>
+<text x="200" y="84">_</text>
+<text x="244" y="84">'_</text>
+<text x="72" y="100">_</text>
+<text x="120" y="100">_</text>
+<text x="200" y="100">(_)</text>
+<text x="12" y="116">\_</text>
+<text x="80" y="116">,</text>
+<text x="104" y="116">\</text>
+<text x="136" y="116">_</text>
+<text x="168" y="116">_</text>
+<text x="184" y="116">\</text>
+<text x="216" y="116">/</text>
+<text x="232" y="116">_</text>
+<text x="264" y="116">_</text>
+<text x="88" y="148">/</text>
+</g>
+<g class="source" fill="#ffdd54" font-size="12px">
+<text x="10" y="38">_</text><text x="18" y="38">_</text><text x="26" y="38">_</text><text x="34" y="38">_</text><text x="42" y="38">_</text><text x="50" y="38">_</text><text x="106" y="38">_</text><text x="138" y="38">_</text><text x="10" y="54">|</text><text x="26" y="54">_</text><text x="34" y="54">_</text><text x="42" y="54">_</text><text x="58" y="54">\</text><text x="98" y="54">|</text><text x="114" y="54">|</text><text x="130" y="54">|</text><text x="146" y="54">|</text><text x="10" y="70">|</text><text x="26" y="70">|</text><text x="34" y="70">_</text><text x="42" y="70">/</text><text x="58" y="70">/</text><text x="90" y="70">_</text><text x="98" y="70">|</text><text x="114" y="70">|</text><text x="122" y="70">_</text><text x="130" y="70">|</text><text x="146" y="70">|</text><text x="154" y="70">_</text><text x="162" y="70">_</text><text x="194" y="70">_</text><text x="202" y="70">_</text><text x="210" y="70">_</text><text x="234" y="70">_</text><text x="250" y="70">_</text><text x="258" y="70">_</text><text x="10" y="86">|</text><text x="34" y="86">_</text><text x="42" y="86">_</text><text x="50" y="86">/</text><text x="66" y="86">|</text><text x="82" y="86">|</text><text x="98" y="86">|</text><text x="114" y="86">_</text><text x="122" y="86">_</text><text x="130" y="86">|</text><text x="146" y="86">'</text><text x="154" y="86">_</text><text x="170" y="86">\</text><text x="186" y="86">/</text><text x="202" y="86">_</text><text x="218" y="86">\</text><text x="226" y="86">|</text><text x="242" y="86">'</text><text x="250" y="86">_</text><text x="266" y="86">\</text><text x="10" y="102">|</text><text x="26" y="102">|</text><text x="50" y="102">|</text><text x="66" y="102">|</text><text x="74" y="102">_</text><text x="82" y="102">|</text><text x="98" y="102">|</text><text x="114" y="102">|</text><text x="122" y="102">_</text><text x="130" y="102">|</text><text x="146" y="102">|</text><text x="162" y="102">|</text><text x="178" y="102">|</text><text x="194" y="102">(</text><text x="202" y="102">_</text><text x="210" y="102">)</text><text x="226" y="102">|</text><text x="242" y="102">|</text><text x="258" y="102">|</text><text x="274" y="102">|</text><text x="10" y="118">\</text><text x="18" y="118">_</text><text x="26" y="118">|</text><text x="58" y="118">\</text><text x="66" y="118">_</text><text x="74" y="118">_</text><text x="82" y="118">,</text><text x="98" y="118">|</text><text x="106" y="118">\</text><text x="114" y="118">_</text><text x="122" y="118">_</text><text x="130" y="118">|</text><text x="138" y="118">_</text><text x="146" y="118">|</text><text x="162" y="118">|</text><text x="170" y="118">_</text><text x="178" y="118">|</text><text x="186" y="118">\</text><text x="194" y="118">_</text><text x="202" y="118">_</text><text x="210" y="118">_</text><text x="218" y="118">/</text><text x="226" y="118">|</text><text x="234" y="118">_</text><text x="242" y="118">|</text><text x="258" y="118">|</text><text x="266" y="118">_</text><text x="274" y="118">|</text><text x="66" y="134">_</text><text x="74" y="134">_</text><text x="82" y="134">/</text><text x="98" y="134">|</text><text x="58" y="150">|</text><text x="66" y="150">_</text><text x="74" y="150">_</text><text x="82" y="150">_</text><text x="90" y="150">/</text></g></svg>

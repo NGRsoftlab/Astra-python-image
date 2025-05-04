@@ -1,0 +1,7 @@
+bin
+.vscode
+tmp
+test.sh
+*.list
+*.urls
+deps/
