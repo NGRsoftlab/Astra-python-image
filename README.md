@@ -27,7 +27,23 @@
 
 **Python container image** - это реализация легковесной сборки ЯП Python на базе Astra Linux
 
-::include{file=docs/integration.md}
+Присоединяйтесь к нашим социальным сетям:
+
+<!-- markdownlint-disable MD033 -->
+
+<div class="badges-row-public">
+  <h4 align="center">
+    <a href="https://t.me/NGR_Softlab">
+      <img src="https://shields.io/badge/ngr-telegram-blue?logo=telegram&style=for-the-badge" alt="NGR Social Telegram" height="40" />
+    </a>
+    &emsp; &emsp; &emsp;
+    <a href="https://www.ngrsoftlab.ru/?utm_source=tg&utm_medium=start" >
+      <img src="https://shields.io/badge/ngr-web--page-yellow?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjIyLjcgMCA1MS45IDUxLjciPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNzQuNSAwSDYzLjhsMy42IDMuNWMuNy43LjcgMS45IDAgMi43LS43LjctMS45LjctMi42IDBMNTguOSAwSDUzbDE0LjUgMTMuOWMuNy43LjcgMS45IDAgMi43LS43LjctMS45LjctMi42IDBMNDkgMGgtNi44bDI1LjMgMjQuM2MuNy43LjcgMS45IDAgMi43LS43LjctMS45LjctMi42IDBMMzkgMGgtNy43bDM2LjEgMzQuN2MuNy43LjcgMS45IDAgMi42cy0xLjkuNy0yLjYgMEwyOSAwYy0zLjUuNC02LjMgMy40LTYuMyA3djQ0LjdoMTAuNmwtMy42LTMuNGMtLjctLjctLjctMS45IDAtMi42czEuOS0uNyAyLjcgMGw1LjggNmg1LjlMMjkuNyAzNy45Yy0uNy0uNy0uNy0xLjkgMC0yLjcuNy0uNyAxLjktLjcgMi43IDBsMTUuOCAxNi40SDU1TDI5LjggMjcuNGMtLjctLjctLjctMS45IDAtMi43LjctLjcgMS45LS43IDIuNyAwbDI1LjggMjYuOEg2NkwyOS45IDE2LjljLS43LS43LS43LTEuOSAwLTIuNnMxLjktLjcgMi43IDBsMzUuNyAzNy4yYzMuNS0uMyA2LjMtMy4zIDYuMy03VjB6IiBmaWxsPSIjRjhBRDAwIi8+PC9zdmc+" alt="NGR Social Media" height="40" />
+    </a>
+  </h4>
+</div>
+
+<!-- markdownlint-enable MD033 -->
 
 ## Contents
 
@@ -45,6 +61,7 @@
   - [How to test local](#how-to-test-local)
   - [Scratch](#scratch)
   - [Miscellaneous](#miscellaneous)
+    - [Cya!](#cya)
 
 ## [Requirements](#contents)
 
@@ -56,6 +73,11 @@
 | :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :---------------- |
 | ![Astra 1.7](https://img.shields.io/badge/Astra-1.7.x-00ADD8?style=flat&logo=astra&logoColor=white) |  ![Python 3.7](https://img.shields.io/badge/Python-3.7-3776AB?style=flat&logo=python&logoColor=ffdd54)  | ✅ Fully supported |
 | ![Astra 1.8](https://img.shields.io/badge/Astra-1.8.x-00ADD8?style=flat&logo=astra&logoColor=white) | ![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=ffdd54) | ✅ Fully supported |
+
+<!-- markdownlint-disable MD033 -->
+<div align="center"> <sub> Таблица 1. Поддерживаемые ОС-ы. </sub> </div>
+<p>&nbsp;</p>
+<!-- markdownlint-enable MD033 -->
 
 ## [What it is](#contents)
 
@@ -78,12 +100,10 @@ pre-commit installed at .git/hooks/commit-msg
 pre-commit installed at .git/hooks/pre-push
 ```
 
->>> [!warning] Предупреждение
-
-- Чтобы проверить свои изменения, воспользуйтесь командой `pre-commit run --all-files`
-- Чтобы проверить конкретную задачу, воспользуетесь командой `pre-commit run <target> --all-files`
-- Если Вы понимаете что творите и хотите пропустить проверку `pre-commit`-ом воспользуйтесь `--no-verify`, пример `git commit -m "Добавил изменения и не хочу проверки" --no-verify`
->>>
+> [!warning]
+> Чтобы проверить свои изменения, воспользуйтесь командой `pre-commit run --all-files`.
+> Чтобы проверить конкретную задачу, воспользуетесь командой `pre-commit run <target> --all-files`.
+> Если Вы понимаете что творите и хотите пропустить проверку `pre-commit`-ом воспользуйтесь `--no-verify`, пример `git commit -m "Добавил изменения и не хочу проверки" --no-verify`
 
 Существует несколько способов как можно взаимодействовать со сборкой образа. Благодаря скрипту[^2] может существовать 3 способа передачи аргумента в `Dockerfile`:
 
@@ -121,13 +141,6 @@ pre-commit installed at .git/hooks/pre-push
     .. build ...
     ```
 
-    >>> [!tip] Проверка доступных версий приложения
-
-    - `apt show python3-minimal`
-    - `apt-cache policy python3-minimal`
-    - `apt-cache show python3-minimal`
-    >>>
-
 3. Передача ссылки, на заранее собранный из исходников Python
 
     ```console
@@ -144,6 +157,12 @@ pre-commit installed at .git/hooks/pre-push
 
     .. build ...
     ```
+
+> [!tip]
+> Проверка доступных версий приложения -
+> `apt show python3-minimal`,
+> `apt-cache policy python3-minimal`,
+> `apt-cache show python3-minimal`
 
 Работа с прокси репозиториями. Логика работы тоже является 'плавающей' т.е. позволяет передавать разный набор параметров для Вашего удобства:
 
@@ -198,6 +217,11 @@ pre-commit installed at .git/hooks/pre-push
 | `pip_trusted_host`   |          ''           | string | Добавляет хост в список доверенных, чтобы `pip` не проверял SSL-сертификаты при подключении к нему[^3]. |
 | `python_identity`    |         3.11          | string |                                                                            Ожидаемая версия Python[^2]. |
 
+<!-- markdownlint-disable MD033 -->
+<div align="center"> <sub> Таблица 2. Переопределяемые аргументы для сборки образа. </sub> </div>
+<p>&nbsp;</p>
+<!-- markdownlint-enable MD033 -->
+
 ### [Extra pip and Python args](#contents)
 
 Вовремя работы сборки, `pip` использует [`env-wrapper`](scripts/pip-env.sh) который помогает ускорить установку компонентов. Ниже приведена таблица с краткой информацией о переменных, которые МОГУТ использоваться во время сборки И также глобально объявляться в конечном(целевом) образе. Вы можете использовать те или иные переменные для управления собственными сборками, если понимаете что творите
@@ -211,6 +235,11 @@ pre-commit installed at .git/hooks/pre-push
 | `PIP_ROOT_USER_ACTION=ignore`                      |               ignore                | Позволяет запускать `pip` от root без предупреждений                                 | Используется, если образ работает от `root`                              | Отключает предупреждения при запуске `pip` от имени `root`                                                   |
 | `PYTHONDONTWRITEBYTECODE=1`                        |              Включено               | Экономит место — не создаёт `.pyc` файлов                                            | Ухудшает производительность                                              | Python не будет записывать скомпилированные байт-коды (`__pycache__`, `.pyc`), экономя место и время         |
 | `PYTHONWARNINGS="ignore:Unverified HTTPS request"` | `"ignore:Unverified HTTPS request"` | Полезно при использовании небезопасных источников или внутренних репозиториев        | Может понадобиться, если используется `pip` или `python` с HTTP(S)       | Подавляет предупреждения о непроверенных HTTPS-запросах (часто связано с самоподписанными SSL-сертификатами) |
+
+<!-- markdownlint-disable MD033 -->
+<div align="center"> <sub> Таблица 3. Дополнительные переменные окружения PIP для работы с образами и их влияние на сборку/работу в контейнере. </sub> </div>
+<p>&nbsp;</p>
+<!-- markdownlint-enable MD033 -->
 
 Альтернативный способ очистки кеша, чтобы уменьшить размер образа:
 
@@ -859,7 +888,16 @@ ______      _   _
 $ aasvg --source --embed < ./docs/ascii.txt > docs/images/logo.svg
 ```
 
-::include{file=docs/cya.md}
+<!-- markdownlint-disable MD033 MD041 MD051 -->
+<table align="center"><tr><td align="center" width="9999">
+<img src="docs/images/petuhon-cya.png" align="center" alt="Python Chicken Chimera">
+
+<div align="center"> <sub> Питоновый Петухон под авторством <a href="https://chat.qwen.ai/">qwen.ai</a>. </sub> </div>
+
+### [Cya!](#contents)
+
+</td></tr></table>
+<!-- markdownlint-enable MD033 MD041 MD051 -->
 
 ---
 
