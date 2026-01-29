@@ -69,8 +69,8 @@
 
 ## [Supported Technologies](#contents)
 
-|                                                 OS                                                  |                                                 Python                                                  | Status            |
-| :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :---------------- |
+|                                                 OS                                                  |                                                 Python                                                  | Status             |
+| :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :----------------- |
 | ![Astra 1.7](https://img.shields.io/badge/Astra-1.7.x-00ADD8?style=flat&logo=astra&logoColor=white) |  ![Python 3.7](https://img.shields.io/badge/Python-3.7-3776AB?style=flat&logo=python&logoColor=ffdd54)  | ✅ Fully supported |
 | ![Astra 1.8](https://img.shields.io/badge/Astra-1.8.x-00ADD8?style=flat&logo=astra&logoColor=white) | ![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=ffdd54) | ✅ Fully supported |
 
