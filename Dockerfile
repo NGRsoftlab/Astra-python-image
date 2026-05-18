@@ -31,10 +31,7 @@ COPY docs/issue /etc/issue
 ## Install and setup application
 RUN \
     --mount=type=bind,source=./scripts,target=/usr/local/sbin,readonly \
-    apt-install.sh \
-## Small init process
-        dumb-init \
-    && python-install-approximately.sh "${python_identity}" \
+    python-install-approximately.sh "${python_identity}" \
 ## Set corporative proxy
     && python-set-proxy.sh \
 ## Mock test
@@ -137,4 +134,4 @@ ENV PATH="${PYTHON_VENV_PATH}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/
 ## Set work directory
 WORKDIR /
 
-ENTRYPOINT [ "dumb-init", "docker-entrypoint.sh" ]
+ENTRYPOINT [ "docker-entrypoint.sh" ]

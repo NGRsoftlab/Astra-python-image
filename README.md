@@ -69,10 +69,17 @@
 
 ## [Supported Technologies](#contents)
 
-|                                                 OS                                                  |                                                 Python                                                  | Status             |
-| :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :----------------- |
-| ![Astra 1.7](https://img.shields.io/badge/Astra-1.7.x-00ADD8?style=flat&logo=astra&logoColor=white) |  ![Python 3.7](https://img.shields.io/badge/Python-3.7-3776AB?style=flat&logo=python&logoColor=ffdd54)  | ✅ Fully supported |
-| ![Astra 1.8](https://img.shields.io/badge/Astra-1.8.x-00ADD8?style=flat&logo=astra&logoColor=white) | ![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=ffdd54) | ✅ Fully supported |
+|             OS              |             Python              | Status                      |
+| :-------------------------: | :-----------------------------: | :-------------------------- |
+| ![Astra 1.7][astra-img-1.7] |  ![Python 3.7][python-img-3.7]  | ![Supported][supported-img] |
+| ![Astra 1.8][astra-img-1.8] | ![Python 3.11][python-img-3.11] | ![Supported][supported-img] |
+
+<!-- Ссылки вынесены вниз для уменьшения рендеринга таблицы. Данный подход является, своего рода, snippet -->
+[astra-img-1.7]: https://img.shields.io/badge/Astra-1.7.x-00ADD8?style=flat&logo=astra&logoColor=white
+[astra-img-1.8]: https://img.shields.io/badge/Astra-1.8.x-00ADD8?style=flat&logo=astra&logoColor=white
+[python-img-3.7]: https://img.shields.io/badge/Python-3.7-3776AB?style=flat&logo=python&logoColor=ffdd54
+[python-img-3.11]: https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=ffdd54
+[supported-img]: https://img.shields.io/badge/Supported-%230db7ed.svg?logo=Docker&style=for-the-badge&logoColor=white
 
 <!-- markdownlint-disable MD033 -->
 <div align="center"> <sub> Таблица 1. Поддерживаемые ОС-ы. </sub> </div>
@@ -107,7 +114,7 @@ pre-commit installed at .git/hooks/pre-push
 
 Существует несколько способов как можно взаимодействовать со сборкой образа. Благодаря скрипту[^2] может существовать 3 способа передачи аргумента в `Dockerfile`:
 
-1. Передача 'примерной' версии. В результате передачи данной строки, скрипт [попытается найти](scripts/python-install-approximately.sh#L74-80) точную версии, если таковой нет, то будет возвращена пустая строка
+1. Передача 'примерной' версии. В результате передачи данной строки, скрипт [попытается найти](scripts/python-install-approximately.sh#L106-111) точную версии, если таковой нет, то будет возвращена пустая строка
 
     ```console
     ## Export Python version for 1.7.5
@@ -162,7 +169,9 @@ pre-commit installed at .git/hooks/pre-push
 > Проверка доступных версий приложения -
 > `apt show python3-minimal`,
 > `apt-cache policy python3-minimal`,
-> `apt-cache show python3-minimal`
+> `apt-cache show python3-minimal`,
+> `apt-cache search --names-only ^python3-`,
+> `apt-cache search --names-only ^python-`
 
 Работа с прокси репозиториями. Логика работы тоже является 'плавающей' т.е. позволяет передавать разный набор параметров для Вашего удобства:
 
