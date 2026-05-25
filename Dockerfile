@@ -40,7 +40,7 @@ RUN \
 ## Remove history sensitive data
     && env -C /root rm -f .bash_history .python_history .wget-hsts \
 ## Enable venv
-    && python3 -m venv "${PYTHON_VENV_PATH}" \
+    && python3 -m venv --system-site-packages "${PYTHON_VENV_PATH}" \
 ## Global remove cache
     && PYTHON_SITE_PACKAGES="$(python3 -c 'import site;print(site.getsitepackages()[0])')" \
     && PYTHON_OS_FILE="$(python3 -c 'import os as _;print(_.__file__)')" \
